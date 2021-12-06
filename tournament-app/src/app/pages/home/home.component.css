@@ -1,0 +1,16 @@
+.content-home {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.btn {
+  font-size: 1.3em;
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  .btn {
+    font-size: 1em;
+  }
+}
