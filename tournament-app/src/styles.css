@@ -1,1 +1,41 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+
+@font-face {
+  font-family: Beaufort;
+  src: url(/assets/fonts/beaufort-bold.ttf);
+}
+
+@font-face {
+  font-family: Spiegel;
+  src: url(/assets/fonts/spiegel.ttf);
+}
+
+h1 {
+  font-family: Beaufort, sans-serif;
+  font-size: 5em;
+  color: #eee;
+  letter-spacing: 0.03em;
+  line-height: 1.1;
+}
+
+p {
+  font-family: Spiegel, sans-serif;
+  font-size: 0.9em;
+  color: #eee;
+  letter-spacing: 0.08em;
+}
+
+.btn {
+  font-family: Beaufort, sans-serif;
+  background-color: #0bc6e3;
+}
+
+@media (max-width: 800px) {
+  h1 {
+    font-size: 3em;
+  }
+
+  p {
+    font-size: 0.8em;
+  }
+}
