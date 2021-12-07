@@ -1,0 +1,8 @@
+<div class="card" (click)='focusIntoInputName()'>
+  <img [src]="imagePath" class="card-img-top">
+  <div class="card-body">
+    <h2 class="card-title" [hidden]='!nameIsDefined'>{{teamName}}</h2>
+    <input #inputName type="text" [hidden]='nameIsDefined' class="form-control col-12"
+      placeholder="Digite o nome da equipe" [(ngModel)]='teamName' (blur)='onBlurInputName()'>
+  </div>
+</div>

@@ -1,0 +1,32 @@
+.card {
+  cursor: pointer;
+  background-color: #0f2f45;
+  height: 300px;
+  width: 18rem;
+  box-shadow: 0px 0px 50px black;
+}
+
+.card-title,
+input {
+  top: 50%;
+  position: relative;
+  transform: translate(0, -50%);
+}
+
+.card-title {
+  text-align: center;
+}
+
+img {
+  padding: 20px;
+}
+
+input {
+  background-color: #061620;
+}
+
+h2 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
