@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef, Input } from '@angular/core';
 
 @Component({
   selector: 'app-card',
@@ -14,10 +14,6 @@ export class CardComponent implements OnInit {
   @ViewChild("inputName") inputName!: ElementRef<HTMLInputElement>;
 
   constructor () {}
-  // constructor (teamId: number, imagePath: String) {
-  //   this.teamId = teamId
-  //   this.imagePath = imagePath
-  // }
   
   ngOnInit(): void {
   }
@@ -26,6 +22,7 @@ export class CardComponent implements OnInit {
     return this._teamId
   }
 
+  @Input()
   public set teamId(value: Number) {
     this._teamId = value
   }
@@ -42,6 +39,7 @@ export class CardComponent implements OnInit {
     return this._teamName
   }
   
+  @Input()
   public set teamName(value: String) {
     this._teamName = value.trim()
   }
@@ -50,6 +48,7 @@ export class CardComponent implements OnInit {
     return this._imagePath
   }
 
+  @Input()
   public set imagePath(value: String) {
     this._imagePath = value
   }
