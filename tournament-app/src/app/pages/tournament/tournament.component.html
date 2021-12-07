@@ -1,0 +1,43 @@
+<div class="teams-duels">
+  <nav class="navbar">
+    <div class="container container-title">
+      <div class="col-12">
+        <h2 [ngClass]="descriptionPageClass">{{descriptionPage}}</h2>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row teams-cards">
+      <div *ngFor="let team of teams" class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12" align="center">
+        <div [ngClass]="team.class">
+          <app-card [teamName]="team.name" [imagePath]="team.imagePath"></app-card>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container description-duels">
+    <div class="row">
+      <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 border-description-duels" align="center">
+        <h3>VS</h3>
+      </div>
+      <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 border-description-duels" align="center">
+        <h3>VS</h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="container start-duels">
+    <div class="row">
+      <div class="col-12" align="center">
+        <button type="button" class="btn btn-primary" (click)="startDuels()" [ngClass]="buttonStartClass">COMEÇAR
+          DUELOS</button>
+      </div>
+      <div class="col-12" align="center">
+        <button type="button" class="btn btn-primary" (click)="restartDuels()" [ngClass]="buttonRestartClass">RECOMEÇAR
+          DUELOS</button>
+      </div>
+    </div>
+  </div>
+</div>

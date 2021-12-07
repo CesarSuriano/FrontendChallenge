@@ -1,0 +1,48 @@
+.container-title {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.teams-cards {
+  margin-top: 5%;
+}
+
+.border-description-duels {
+  height: 3px;
+  background-color: #ff3859;
+  right: 0;
+}
+
+h3 {
+  margin-top: 20px;
+}
+
+.start-duels {
+  margin-top: 40px;
+}
+
+.text-blink {
+  animation: blinker 2s linear infinite;
+}
+
+.fade-out {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 0.7s, opacity 0.7s linear;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .description-duels {
+    display: none;
+  }
+}
